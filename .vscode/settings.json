@@ -4,6 +4,7 @@
 	"editor.fontSize": 14,
 	"editor.tabSize": 4,
 	"editor.insertSpaces": false,
+	"editor.tabCompletion": true,
 
 	"workbench.colorCustomizations": {
 		"statusBar.background": "#e73c00",
@@ -23,6 +24,8 @@
 		"Makefile": true,
 		"bin": true,
 		"obj": true,
+		"Content/bin": true,
+		"Content/obj": true,
 		"**/*.7z": true,
 		"**/*.rar": true,
 		"**/Thumbs.db": true
