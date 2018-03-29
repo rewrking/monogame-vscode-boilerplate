@@ -1,0 +1,33 @@
+{
+	"editor.fontFamily": "'Courier New', monospace",
+	"editor.lineHeight": 20,
+	"editor.fontSize": 14,
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+
+	"workbench.colorCustomizations": {
+		"statusBar.background": "#e73c00",
+		"statusBar.foreground": "#ffffff",
+		"statusBar.debuggingBackground": "#b02e00",
+		"statusBar.debuggingForeground": "#ffffff",
+		"terminal.ansiBrightRed": "#ee3355",
+		"terminal.ansiBrightGreen": "#a5ea4f",
+		"terminal.ansiBrightBlue": "#5599ff"
+	},
+
+	"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
+	"files.encoding": "windows1252",
+	"files.trimTrailingWhitespace": true,
+	"files.exclude": {
+		"Makefile": true,
+		"bin": true,
+		"obj": true,
+		"**/*.7z": true,
+		"**/*.rar": true,
+		"**/Thumbs.db": true
+	},
+
+	"csharp.referencesCodeLens.enabled": false,
+	"csharp.suppressProjectJsonWarning": true
+}

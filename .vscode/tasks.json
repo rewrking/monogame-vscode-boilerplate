@@ -1,0 +1,79 @@
+{
+    "version": "2.0.0",
+	"options": {
+		"cwd": "${workspaceRoot}",
+		"env": {
+            "BUILD_CMD": "dotnet build ${workspaceRoot}/game.csproj",
+            "RUN_CMD": "dotnet run",
+			"BUILD": "Release"
+        }
+    },
+	"presentation": {
+		"echo": false,
+		"reveal": "always",
+		"focus": true,
+		"panel": "shared"
+    },
+	"tasks": [
+		{
+			"label": "Build & Run: Release",
+			"command": "tput setaf 4; if ${BUILD_CMD}; then (tput setaf 2; tput bold; echo \"=== Build Succeeded: Launching ${NAME} ===\"; tput sgr0; ${RUN_CMD}) else (tput setaf 1; tput bold; echo \"=== Build Failed: Review the compile errors above ===\"; tput sgr0) fi",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Build: Release",
+			"command": "tput setaf 4; if ${BUILD_CMD}; then (tput setaf 2; tput bold; echo \"=== Build Succeeded ===\") else (tput setaf 1; tput bold; echo \"=== Build Failed: Review the compile errors above ===\") fi; tput sgr0",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Run: Release",
+			"command": "${RUN_CMD}",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Build & Run: Debug",
+			"command": "tput setaf 4; BUILD=Debug; if ${BUILD_CMD}; then (tput setaf 2; tput bold; echo \"=== Build Succeeded: Launching ${NAME} ===\"; tput sgr0; ${RUN_CMD}) else (tput setaf 1; tput bold; echo \"=== Build Failed: Review the compile errors above ===\"; tput sgr0) fi",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Build: Debug",
+			"command": "tput setaf 4; BUILD=Debug; if ${BUILD_CMD}; then (tput setaf 2; tput bold; echo \"=== Build Succeeded ===\") else (tput setaf 1; tput bold; echo \"=== Build Failed: Review the compile errors above ===\") fi; tput sgr0",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Run: Debug",
+			"command": "BUILD=Debug; ${RUN_CMD}",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		},
+    ]
+}
