@@ -2,14 +2,14 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace MyGame
+namespace MonoGame
 {
-    public class Game1 : Game
+    public class MyGame : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        public Game1()
+        public MyGame()
         {
             graphics = new GraphicsDeviceManager(this);
             // Window

@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace MyGame
+namespace MonoGame
 {
     public static class Program
     {
         [STAThread]
         static void Main()
         {
-            using (var game = new Game1())
+            using (var game = new MyGame())
                 game.Run();
         }
     }

@@ -1,7 +1,7 @@
 using System;
 
 // Simple logging class based on the environemnt variable
-namespace MyGame
+namespace MonoGame
 {
 	public struct Log
 	{
