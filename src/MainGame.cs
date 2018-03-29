@@ -4,14 +4,15 @@ using Microsoft.Xna.Framework.Input;
 
 namespace MonoGame
 {
-    public class MyGame : Game
+    class MainGame : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        public MyGame()
+        public MainGame()
         {
             graphics = new GraphicsDeviceManager(this);
+
             // Window
             graphics.PreferredBackBufferWidth = 960;
             graphics.PreferredBackBufferHeight = 540;
@@ -37,6 +38,7 @@ namespace MonoGame
             // TODO: Add your initialization logic here
 
             base.Initialize();
+
             Log.Print("Terminal Active\n");
         }
 

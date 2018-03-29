@@ -1,13 +1,13 @@
 using System;
 
-// Simple logging class based on the environemnt variable
+// Simple logging struct based on the environemnt variable
 namespace MonoGame
 {
-	public struct Log
+	struct Log
 	{
-		public static bool isDebug = Environment.GetEnvironmentVariable("BUILD") == "Debug";
+		static bool isDebug = Environment.GetEnvironmentVariable("BUILD") == "Debug";
 
-		public static void Print(String message)
+		public static void Print(string message)
 		{
 			if (isDebug) {
 				Console.Write(message);

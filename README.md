@@ -51,3 +51,8 @@ The only difference in the Debug build is simple use of the console via a custom
 
 
 That should be all you need to get started. Happy game making!
+
+## MonoGame Documentation
+
+Main: http://www.monogame.net/documentation/
+Alternate: https://jjagg.github.io/MonoGame-docfx/manual/

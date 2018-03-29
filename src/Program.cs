@@ -2,12 +2,12 @@
 
 namespace MonoGame
 {
-    public static class Program
+    static class Program
     {
         [STAThread]
         static void Main()
         {
-            using (var game = new MyGame())
+            using (var game = new MainGame())
                 game.Run();
         }
     }
