@@ -8,6 +8,7 @@ namespace MonoGame
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Sprite sprite;
 
         public MainGame()
         {
