@@ -9,8 +9,6 @@ namespace MyGame
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        Log log;
-
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -30,8 +28,6 @@ namespace MyGame
             graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
             graphics.ApplyChanges();*/
 
-            log = new Log();
-
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
         }
@@ -41,7 +37,7 @@ namespace MyGame
             // TODO: Add your initialization logic here
 
             base.Initialize();
-            log.Print("Terminal Active\n");
+            Log.Print("Terminal Active\n");
         }
 
         protected override void LoadContent()

@@ -3,17 +3,11 @@ using System;
 // Simple logging class based on the environemnt variable
 namespace MyGame
 {
-	public class Log
+	public struct Log
 	{
-		bool isDebug;
-
-		public Log()
+		public static void Print(String message)
 		{
-			isDebug = Environment.GetEnvironmentVariable("BUILD") == "Debug";
-		}
-
-		public void Print(String message)
-		{
+			bool isDebug = Environment.GetEnvironmentVariable("BUILD") == "Debug";
 			if (isDebug) {
 				Console.Write(message);
 			}
