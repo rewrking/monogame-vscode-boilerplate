@@ -1,7 +1,7 @@
 {
 	"editor.fontFamily": "'Courier New', monospace",
 	"editor.lineHeight": 20,
-	"editor.fontSize": 14,
+	"editor.fontSize": 12,
 	"editor.tabSize": 4,
 	"editor.insertSpaces": false,
 	"editor.tabCompletion": true,
