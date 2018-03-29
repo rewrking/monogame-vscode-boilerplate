@@ -39,13 +39,10 @@
 			"using Microsoft.Xna.Framework;",
 			"using Microsoft.Xna.Framework.Graphics;",
 			"",
-			"namespace MonoGame",
+			"namespace ${1:NameSpace}",
 			"{",
-    		"\tstruct ${1:ClassName}",
+    		"\tstruct ${2:StructName}",
     		"\t{",
-			"\t\tpublic ${1:ClassName}()",
-			"\t\t{",
-			"\t\t}",
 			"\t}",
 			"}"
 		]
