@@ -41,7 +41,7 @@ namespace MonoGame
 			}
 		}
 
-		public void Resize()
+		public override void Resize()
 		{
 			this.destRect = new Rectangle(
 				this.position.X,

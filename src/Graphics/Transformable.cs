@@ -26,6 +26,7 @@ namespace MonoGame
 			this.position.Y = y;
 			//m_transformNeedUpdate = true;
 			//m_inverseTransformNeedUpdate = true;
+			Resize();
 		}
 
 		public void SetPosition(ref Point position)
@@ -82,6 +83,8 @@ namespace MonoGame
 			this.scale.Y = y;
 			//m_transformNeedUpdate = true;
 			//m_inverseTransformNeedUpdate = true;
+
+			Resize();
 		}
 
 		public void SetScale(ref Vector2 scale)
@@ -112,6 +115,8 @@ namespace MonoGame
 			this.origin.Y = y;
 			//m_transformNeedUpdate = true;
 			//m_inverseTransformNeedUpdate = true;
+
+			Resize();
 		}
 		public void SetOrigin(ref Vector2 origin)
 		{
@@ -121,6 +126,13 @@ namespace MonoGame
 		public ref Vector2 GetOrigin()
 		{
 			return ref origin;
+		}
+
+		//===============================================
+
+		public virtual void Resize()
+		{
+			// Set in inherited class, where the destRect will exist
 		}
 
 		//===============================================
