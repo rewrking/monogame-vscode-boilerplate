@@ -4,13 +4,12 @@ using Microsoft.Xna.Framework.Input;
 
 namespace MonoGame
 {
-    class MainGame : Game
+    class Root : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Sprite sprite;
 
-        public MainGame()
+        public Root()
         {
             graphics = new GraphicsDeviceManager(this);
 

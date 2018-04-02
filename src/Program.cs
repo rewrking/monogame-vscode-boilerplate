@@ -7,7 +7,7 @@ namespace MonoGame
         [STAThread]
         static void Main()
         {
-            using (var game = new MainGame())
+            using (var game = new Root())
                 game.Run();
         }
     }
