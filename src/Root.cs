@@ -16,18 +16,15 @@ namespace MonoGame
             // Window
             graphics.PreferredBackBufferWidth = 960;
             graphics.PreferredBackBufferHeight = 540;
-            graphics.ApplyChanges();
-
-            // Fullscreen (Max Resolution)
-            /*graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
-            graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
-            graphics.IsFullScreen = true;
-            graphics.ApplyChanges();*/
 
             // Fullscreen Window (Max Resolution)
-            /*graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
-            graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
-            graphics.ApplyChanges();*/
+            //graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+            //graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
+
+            // Fullscreen (Max Resolution)
+            //graphics.IsFullScreen = true;
+
+            graphics.ApplyChanges();
 
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
