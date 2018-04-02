@@ -3,8 +3,9 @@
 	"options": {
 		"cwd": "${workspaceRoot}",
 		"env": {
-            "BUILD_CMD": "dotnet build ${workspaceRoot}/game.csproj",
-            "RUN_CMD": "dotnet run",
+            "BUILD_CMD": "dotnet build ${workspaceRoot}/${workspaceRootFolderName}.csproj",
+            "RUN_CMD": "dotnet run ${workspaceRoot}/${workspaceRootFolderName}.csproj",
+			"PUBLISH_CMD": "dotnet publish -r win-x64 -c Release ${workspaceRoot}/${workspaceRootFolderName}.csproj --self-contained",
 			"BUILD": "Release"
         }
     },
@@ -68,6 +69,16 @@
 		{
 			"label": "Run: Debug",
 			"command": "BUILD=Debug; ${RUN_CMD}",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Publish",
+			"command": "BUILD=Release; ${PUBLISH_CMD}",
 			"type": "shell",
 			"group": {
 				"kind": "build",

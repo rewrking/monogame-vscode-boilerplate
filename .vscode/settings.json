@@ -31,7 +31,12 @@
 		"**/Thumbs.db": true
 	},
 
+	"csharp.format.enable": true,
+	"csharp.testsCodeLens.enabled": true,
 	"csharp.referencesCodeLens.enabled": false,
 	"csharp.suppressProjectJsonWarning": true,
-	"csharp.suppressDotnetRestoreNotification": true
+	"csharp.suppressDotnetRestoreNotification": true,
+	"csharp.suppressDotnetInstallWarning": false,
+	"csharp.suppressHiddenDiagnostics": true
+
 }

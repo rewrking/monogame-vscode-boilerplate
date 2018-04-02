@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <SrcFolderReference Include=".\src\**" />
-    <SrcFolderReference Include=".\src\**\**" />
+    <!--<SrcFolderReference Include=".\src\**\**" />-->
   </ItemGroup>
 
   <ItemGroup>
