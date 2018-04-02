@@ -32,5 +32,6 @@
 	},
 
 	"csharp.referencesCodeLens.enabled": false,
-	"csharp.suppressProjectJsonWarning": true
+	"csharp.suppressProjectJsonWarning": true,
+	"csharp.suppressDotnetRestoreNotification": true
 }
