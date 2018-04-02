@@ -48,11 +48,16 @@ The only difference in the Debug build is simple use of the console via a custom
 * This configuration assumes all source files are contained within the **src** folder, but uses the **root** as the working directory for assets & things referenced in your project.
 * Feel free to offer suggestions/report issues if there's anything I missed, or could do better.
 * This will be an ongoing project as I learn more about C# and MonoGame.
+* Upon the initial load in VS Code, you'll see numerous "problems" trigger. Simply build the game once and these should go away.
+* This config is based on https://github.com/dotnet/corert/tree/master/samples/MonoGame
 
+## Publishing
 
-That should be all you need to get started. Happy game making!
+VS Code & .Net Core are pefect for development since they are both nice and fast, however, creating the final exe & publishing via .NET Core isn't recommended for now since it's kind of limited. You'll want to have a full Visual Studio 2017 install configured (See: https://www.codeproject.com/Articles/1175671/Getting-Started-with-MonoGame-using-Visual-Studio) for creating the final build of your game. I've included an archive with the extra project files required for VS 2017 that can be tweaked to fit your needs further.
 
 ## MonoGame Documentation
 
 Main: http://www.monogame.net/documentation/
 Alternate: https://jjagg.github.io/MonoGame-docfx/manual/
+
+That should be all you need to get started. Happy game making!
