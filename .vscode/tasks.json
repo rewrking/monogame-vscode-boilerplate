@@ -3,9 +3,9 @@
 	"options": {
 		"cwd": "${workspaceRoot}",
 		"env": {
-            "BUILD_CMD": "dotnet build ${workspaceRoot}/${workspaceRootFolderName}.csproj",
-            "RUN_CMD": "dotnet run ${workspaceRoot}/${workspaceRootFolderName}.csproj",
-			"PUBLISH_CMD": "dotnet publish -r win-x64 -c Release ${workspaceRoot}/${workspaceRootFolderName}.csproj --self-contained",
+            "BUILD_CMD": "dotnet build ${workspaceRoot}/project.csproj",
+            "RUN_CMD": "dotnet run ${workspaceRoot}/project.csproj",
+			"PUBLISH_CMD": "dotnet publish -r win-x64 -c Release ${workspaceRoot}/project.csproj --self-contained",
 			"BUILD": "Release"
         }
     },
