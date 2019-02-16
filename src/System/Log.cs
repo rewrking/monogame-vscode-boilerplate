@@ -7,6 +7,11 @@ namespace MonoGame
 	{
 		static bool isDebug = Environment.GetEnvironmentVariable("BUILD") == "Debug";
 
+		public static void Clear()
+		{
+			Console.Clear();
+		}
+
 		public static void Print(string message)
 		{
 			if (isDebug) {

@@ -28,6 +28,8 @@ namespace MonoGame
 
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+
+            Log.Clear();
         }
 
         protected override void Initialize()
