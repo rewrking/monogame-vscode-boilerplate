@@ -4,7 +4,7 @@ A Monogame C# configuration for Visual Studio Code (on Windows)
 ## Prerequisites
 
 * [MonoGame (for Visual Studio)](http://www.monogame.net/downloads/)
-* [.NET Core SDK (2.x)](https://www.microsoft.com/net/learn/get-started/windows)
+* [.NET Core SDK (3.x)](https://dotnet.microsoft.com/download)
 * [Visual Studio Code (Windows version)](https://code.visualstudio.com/download)
   * [Official C# Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 * [Git Bash (for Windows) ](https://git-scm.com/downloads)

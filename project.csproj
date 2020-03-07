@@ -1,13 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <DefineConstants>WINDOWS</DefineConstants>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
   </PropertyGroup>
 
   <ItemGroup>
     <SrcFolderReference Include=".\src\**" />
-    <!--<SrcFolderReference Include=".\src\**\**" />-->
   </ItemGroup>
 
   <ItemGroup>
