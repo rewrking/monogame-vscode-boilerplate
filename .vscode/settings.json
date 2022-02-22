@@ -1,28 +1,11 @@
 {
 	"debug.toolBarLocation": "docked",
-
-	"editor.fontFamily": "'Courier New', monospace",
-	"editor.lineHeight": 20,
-	"editor.fontSize": 12,
 	"editor.tabSize": 4,
 	"editor.insertSpaces": false,
-
-	"workbench.colorCustomizations": {
-		"statusBar.background": "#e73c00",
-		"statusBar.foreground": "#ffffff",
-		"statusBar.debuggingBackground": "#b02e00",
-		"statusBar.debuggingForeground": "#ffffff",
-		"terminal.ansiBrightRed": "#ee3355",
-		"terminal.ansiBrightGreen": "#a5ea4f",
-		"terminal.ansiBrightBlue": "#5599ff"
-	},
-
-	"terminal.integrated.shell.windows": "C:/Program Files/Git/bin/bash.exe",
-
-	"files.encoding": "windows1252",
+	"terminal.integrated.defaultProfile.windows":"Git Bash",
+	"files.encoding": "utf8",
 	"files.trimTrailingWhitespace": true,
 	"files.exclude": {
-		".vscode/_*.json": true,
 		//".vscode/tasks.json": true,
 		//.".vscode/launch.json": true,
 		"bin": true,
@@ -33,7 +16,6 @@
 		"**/*.rar": true,
 		"**/Thumbs.db": true
 	},
-
 	"csharp.format.enable": true,
 	"csharp.testsCodeLens.enabled": true,
 	"csharp.referencesCodeLens.enabled": false,
