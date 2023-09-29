@@ -3,10 +3,7 @@
 	"options": {
 		"cwd": "${workspaceRoot}",
 		"env": {
-            "BUILD_CMD": "dotnet build ${workspaceRoot}/project.csproj",
-            "RUN_CMD": "dotnet run ${workspaceRoot}/project.csproj",
-			"PUBLISH_CMD": "dotnet publish -r win-x64 -c Release ${workspaceRoot}/project.csproj --self-contained",
-			"BUILD": "Release"
+            "MYPROJECT": "${workspaceRoot}/project.csproj"
         }
     },
 	"presentation": {
@@ -18,7 +15,7 @@
 	"tasks": [
 		{
 			"label": "Build & Run: Release",
-			"command": "tput setaf 4; if ${BUILD_CMD}; then (tput setaf 2; tput bold; echo \"=== Build Succeeded: Launching ${NAME} ===\"; tput sgr0; ${RUN_CMD}) else (tput setaf 1; tput bold; echo \"=== Build Failed: Review the compile errors above ===\"; tput sgr0) fi",
+			"command": "dotnet build -c Release ${MYPROJECT} && dotnet run -c Release ${MYPROJECT}",
 			"type": "shell",
 			"group": {
 				"kind": "build",
@@ -28,7 +25,7 @@
 		},
 		{
 			"label": "Build: Release",
-			"command": "tput setaf 4; if ${BUILD_CMD}; then (tput setaf 2; tput bold; echo \"=== Build Succeeded ===\") else (tput setaf 1; tput bold; echo \"=== Build Failed: Review the compile errors above ===\") fi; tput sgr0",
+			"command": "dotnet build -c Release ${MYPROJECT}",
 			"type": "shell",
 			"group": {
 				"kind": "build",
@@ -38,53 +35,45 @@
 		},
 		{
 			"label": "Run: Release",
-			"command": "${RUN_CMD}",
+			"command": "dotnet run -c Release ${MYPROJECT}",
 			"type": "shell",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
 			"problemMatcher": []
 		},
 		{
 			"label": "Build & Run: Debug",
-			"command": "tput setaf 4; BUILD=Debug; if ${BUILD_CMD}; then (tput setaf 2; tput bold; echo \"=== Build Succeeded: Launching ${NAME} ===\"; tput sgr0; ${RUN_CMD}) else (tput setaf 1; tput bold; echo \"=== Build Failed: Review the compile errors above ===\"; tput sgr0) fi",
+			"command": "dotnet build -c Debug ${MYPROJECT} && dotnet run -c Debug ${MYPROJECT}",
 			"type": "shell",
 			"group": {
 				"kind": "build",
 				"isDefault": true
 			},
-			"problemMatcher": []
+			"problemMatcher": "$msCompile"
 		},
 		{
 			"label": "Build: Debug",
-			"command": "tput setaf 4; BUILD=Debug; if ${BUILD_CMD}; then (tput setaf 2; tput bold; echo \"=== Build Succeeded ===\") else (tput setaf 1; tput bold; echo \"=== Build Failed: Review the compile errors above ===\") fi; tput sgr0",
+			"command": "dotnet build -c Debug ${MYPROJECT}",
 			"type": "shell",
 			"group": {
 				"kind": "build",
 				"isDefault": true
 			},
-			"problemMatcher": []
+			"problemMatcher": "$msCompile"
 		},
 		{
 			"label": "Run: Debug",
-			"command": "BUILD=Debug; ${RUN_CMD}",
+			"command": "dotnet run -c Debug ${MYPROJECT}",
 			"type": "shell",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"problemMatcher": []
+			"problemMatcher": "$msCompile"
 		},
 		{
 			"label": "Publish",
-			"command": "BUILD=Release; ${PUBLISH_CMD}",
+			"command": "dotnet publish -r win-x64 -c Release ${workspaceRoot}/project.csproj --self-contained",
 			"type": "shell",
 			"group": {
 				"kind": "build",
 				"isDefault": true
 			},
-			"problemMatcher": []
-		},
+			"problemMatcher": "$msCompile"
+		}
     ]
 }
