@@ -7,7 +7,7 @@ A MonoGame C# configuration for Visual Studio Code
 * [MonoGame 3.8.1+](http://www.monogame.net/downloads/)
 * [.NET 6.x +](https://dotnet.microsoft.com/download)
 * [Visual Studio Code](https://code.visualstudio.com/download)
-  * [Official C# Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+  * [Official C# Extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
 
 ## Instructions
 
