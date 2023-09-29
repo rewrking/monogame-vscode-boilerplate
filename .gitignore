@@ -1,5 +1,9 @@
+# .Net / MonoGame
 obj
 bin
 Content/obj
 Content/bin
+
+# Other
 Thumbs.db
+.DS_Store

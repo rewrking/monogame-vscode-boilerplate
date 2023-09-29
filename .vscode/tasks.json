@@ -37,7 +37,21 @@
 			"label": "Run: Release",
 			"command": "dotnet run -c Release ${MYPROJECT}",
 			"type": "shell",
-			"problemMatcher": []
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Clean: Release",
+			"command": "dotnet clean -c Release ${MYPROJECT}",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$msCompile"
 		},
 		{
 			"label": "Build & Run: Debug",
@@ -63,6 +77,20 @@
 			"label": "Run: Debug",
 			"command": "dotnet run -c Debug ${MYPROJECT}",
 			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Clean: Debug",
+			"command": "dotnet clean -c Debug ${MYPROJECT}",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
 			"problemMatcher": "$msCompile"
 		},
 		{

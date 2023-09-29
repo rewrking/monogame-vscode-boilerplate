@@ -11,7 +11,7 @@ A MonoGame C# configuration for Visual Studio Code
 
 ## Instructions
 
-Install the above and open this folder in VS Code. Run one of the tasks with Ctrl+Shift+B (or Cmd+Shift+B on Mac). This simply uses the dotnet CLI now, where everything is pretty straightforward. At the moment, it's the same template as running `dotnet new mgdesktopgl -o MyGame` with tasks.json for Release and Debug
+Install the above and open this folder in VS Code. Run one of the tasks with Ctrl+Shift+B (or Cmd+Shift+B on Mac). This simply uses the dotnet CLI now, where everything is pretty straightforward. At the moment, it's the same template as running `dotnet new mgdesktopgl -o MyGame` with tasks.json for Release and Debug, but cs files are expected in the src folder.
 
 ## MonoGame Documentation
 

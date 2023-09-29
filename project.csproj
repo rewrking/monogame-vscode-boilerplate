@@ -7,19 +7,19 @@
     <TieredCompilation>false</TieredCompilation>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
-    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <ApplicationManifest>platform/windows/app.manifest</ApplicationManifest>
+    <ApplicationIcon>platform/windows/Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <SrcFolderReference Include=".\src\**" />
+    <SrcFolderReference Include="src/**" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="icon.ico" />
-    <None Remove="icon.bmp" />
+    <None Remove="platform/windows/Icon.ico" />
+    <None Remove="platform/Icon.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="icon.ico" />
-    <EmbeddedResource Include="icon.bmp" />
+    <EmbeddedResource Include="platform/windows/Icon.ico" />
+    <EmbeddedResource Include="platform/Icon.bmp" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />

@@ -11,7 +11,20 @@ public class Game1 : Game
 
     public Game1()
     {
-        _graphics = new GraphicsDeviceManager(this);
+        _graphics = new GraphicsDeviceManager(this)
+        {
+            // Set Windowed Resolution
+            // PreferredBackBufferWidth = 960,
+            // PreferredBackBufferHeight = 540,
+
+            // Set Fullscreen Window (Max Resolution)
+            // PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width,
+            // PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height,
+            // IsFullScreen = true
+        };
+
+        _graphics.ApplyChanges();
+
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
     }

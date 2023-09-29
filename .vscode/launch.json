@@ -5,11 +5,11 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Run project",
+			"name": "Debug",
 			"type": "coreclr",
 			"request": "launch",
-			"preLaunchTask": "build",
-			"program": "${workspaceFolder}/bin/Debug/net7.0/project.dll",
+			"preLaunchTask": "Build: Debug",
+			"program": "${workspaceFolder}/bin/Debug/net6.0/project.dll",
 			"args": [],
 			"cwd": "${workspaceFolder}",
 			"console": "internalConsole",
